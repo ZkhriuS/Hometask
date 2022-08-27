@@ -1,12 +1,8 @@
-﻿Console.WriteLine("Enter 3 values: ");
-if (double.TryParse(Console.ReadLine(), out double first)
-    && double.TryParse(Console.ReadLine(), out double second)
-    && double.TryParse(Console.ReadLine(), out double third))
+﻿Console.WriteLine("Enter a value: ");
+if (int.TryParse(Console.ReadLine(), out int first))
 {
-    double max = first;
-    if (second > max) max = second;
-    if (third > max) max = third;
-    Console.WriteLine($"max = {max}");
+    if (first % 2 == 0) Console.WriteLine("Yes!");
+    else Console.WriteLine("No!");
 }
 else
 {
